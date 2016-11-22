@@ -1,10 +1,10 @@
 {
 	"description": "<p>YTS – Here you will be able to browse and watch movies in excellent DVD, 720p, 1080p and 3D quality, all at the smallest file size<p>For additional info, visit <a href=\"http://yts.to\">http://yts.to</a>",
 	"author": "lprot", 
-	"homepage": "http://github.com/lprot/showtime-plugins",
+	"homepage": "http://www.imdb.com/find?ref_=nv_sr_fn&q=",
 	"title": "YTS",
 	"synopsis": "YTS – Here you will be able to browse and watch movies in excellent DVD, 720p, 1080p and 3D quality, all at the smallest file size",
-	"version": "0.4.8",
+	"version": "0.1",
         "file": "yts.js",
 	"showtimeVersion": "4.8",
 	"type": "ecmascript",
