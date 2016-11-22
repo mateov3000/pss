@@ -55,7 +55,7 @@
         service.enableMetadata = v;
     });
 
-    settings.createString('baseURL', "Base URL without '/' at the end", 'https://yts.ag', function(v) {
+    settings.createString('baseURL', "Base URL without '/' at the end", 'https://torrenty.to', function(v) {
         service.baseUrl = v;
     });
 
