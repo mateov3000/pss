@@ -20,7 +20,7 @@
     var client_secret = 'C84138E28CB75E32';
     var logo = plugin.path + 'logo.png';
     var doc, API = 'https://api.onedrive.com/v1.0';
-    var headersAreSet = true;
+    var headersAreSet = false;
 
     var blue = '6699CC', orange = 'FFA500', red = 'EE0000', green = '008B45';
 
