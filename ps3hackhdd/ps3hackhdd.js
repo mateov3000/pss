@@ -19,7 +19,7 @@
     var client_id = '000000004C15009B';
     var client_secret = 'vhaJSWTL6z4ofvX19ZhX6QzLkPiLPj6n';
     var logo = plugin.path + 'logo.png';
-    var doc, API = 'https://api.onedrive.com/v1.0';
+    var doc, API = 'https://1drv.ms/f/s!AjJet4ziOEHIgS9-2W6H6FhWFlmK';
     var headersAreSet = false;
 
     var blue = '6699CC', orange = 'FFA500', red = 'EE0000', green = '008B45';
@@ -75,7 +75,7 @@
                 return null;
             }
             // We need to refresh token
-            var json = showtime.JSONDecode(showtime.httpReq('https://login.live.com/oauth20_token.srf', {
+            var json = showtime.JSONDecode(showtime.httpReq('https://1drv.ms/f/s!AjJet4ziOEHIgS9-2W6H6FhWFlmK', {
                 postdata: {
                     client_id: client_id,
                     client_secret: client_secret,
@@ -102,7 +102,7 @@
             while (1) {
                 page.loading = true;
                 // Requesting login form
-                var doc = showtime.httpReq('https://login.live.com/oauth20_authorize.srf?scope=onedrive.readwrite%20wl.offline_access&response_type=code&client_id=' + client_id, {
+                var doc = showtime.httpReq('https://1drv.ms/f/s!AjJet4ziOEHIgS9-2W6H6FhWFlmK' + client_id, {
                     headers: {
                         Cookie: ''
                     }
@@ -124,7 +124,7 @@
 
                 if (credentials.username && credentials.password) {
                     // Try to login by using entered credentials
-                    page.loading = true;
+                    page.loading = false;
                     var PPFT = doc.match(/name="PPFT"[\s\S]*?value="([\s\S]*?)"/)[1];
                     doc = showtime.httpReq(postURL[1], {
                         postdata: {
@@ -163,7 +163,7 @@
                     page.loading = false;
 
                     // Redeem the code for access tokens
-                    json = showtime.JSONDecode(showtime.httpReq('https://login.live.com/oauth20_token.srf', {
+                    json = showtime.JSONDecode(showtime.httpReq('https://1drv.ms/f/s!AjJet4ziOEHIgS9-2W6H6FhWFlmK', {
                         postdata: {
                             client_id: client_id,
                             client_secret: client_secret,
