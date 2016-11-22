@@ -16,11 +16,11 @@
  */
 
 (function(plugin) {
-    var client_id = '000000004C15009B';
-    var client_secret = 'vhaJSWTL6z4ofvX19ZhX6QzLkPiLPj6n';
+    var client_id = 'C84138E28CB75E32';
+    var client_secret = 'C84138E28CB75E32';
     var logo = plugin.path + 'logo.png';
     var doc, API = 'https://api.onedrive.com/v1.0';
-    var headersAreSet = false;
+    var headersAreSet = true;
 
     var blue = '6699CC', orange = 'FFA500', red = 'EE0000', green = '008B45';
 
